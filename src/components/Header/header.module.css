@@ -79,7 +79,7 @@
 .link_item {
     text-decoration: none;
     font-weight: 600;
-    color: #161616c9;
+    color: #fff;
 }
 
 .link_item:hover,
@@ -98,6 +98,7 @@
         align-items: center;
         padding-left: 0;
         padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .btn {

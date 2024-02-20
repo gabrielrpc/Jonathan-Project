@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 
 export default function Testimonials() {
-    
+
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
@@ -17,13 +17,12 @@ export default function Testimonials() {
     return (
         <Container>
             <Row className={styles.content_testimonials}>
-                <Col className={styles.testimonials_text}>
+                <Col lg={5} className={styles.testimonials_text}>
                     <h2>Feedbacks From <span>Happy Clients</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In officia dignissimos perspiciatis?</p>
                 </Col>
-            </Row>
-            <Row>
-                <Col xs={6} className={styles.text_content}>
+
+                <Col xs={8} lg={5} className={styles.text_content}>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In officia dignissimos perspiciatis?</p>
                     <div className={styles.person}>
                         <div className={styles.image}></div>
@@ -34,10 +33,6 @@ export default function Testimonials() {
                     </div>
                 </Col>
             </Row>
-            <div  className={styles.next}>
-                <button>prev</button>
-                <button>next</button>
-            </div>
         </Container>
     )
 }

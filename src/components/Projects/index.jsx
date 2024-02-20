@@ -14,21 +14,16 @@ export default function Projects() {
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In officia dignissimos perspiciatis?</p>
                 </Col>
             </Row>
-            <Row>
-                <Col xs={12} className={styles.image_content}>
-                    <Image className={`${styles.image} ${styles.image_small}`} src={trabalhadores} alt='trabalhadores' />
+            <Row className={styles.image_content}>
+                <Col md={12} lg={10} className={styles.content_image_principal}>
+                    <Image className={styles.image_principal} src={trabalhadores} alt='trabalhadores' />
                 </Col>
-                <Col className={styles.image_content_xsmall}>
-                    <Image className={`${styles.image} ${styles.image_smalll}`} src={trabalhadores} alt='trabalhadores' />
-                    <Image className={`${styles.image} ${styles.image_smalll}`} src={trabalhadores} alt='trabalhadores' />
+                <Col  className={styles.content_images_display}>
+                    <Image className={styles.image_slide} src={trabalhadores} alt='trabalhadores' />
+                    <Image className={styles.image_slide} src={trabalhadores} alt='trabalhadores' />
+                    <Image className={styles.image_slide} src={trabalhadores} alt='trabalhadores' />
+                    <Image className={styles.image_slide} src={trabalhadores} alt='trabalhadores' />
                 </Col>
-
-                {/*                 <Col xs={4} className={styles.image_content}>
-                    <Image className={styles.image} src={trabalhadores} alt='trabalhadores' />
-                </Col> */}
-            </Row>
-            <Row className={styles.more}>
-                <Button variant="primary" /* onClick={() => setOpen(!open)} */ className={styles.btn_more}>All Projects</Button>
             </Row>
         </Container>
     )

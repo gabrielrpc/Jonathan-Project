@@ -12,20 +12,16 @@ export default function Footer() {
             <div className={styles.form_prev_modal}>
                 <div>
                     <p>need any help</p>
-                    <h2>Get Solutions For All Your Home Services Needs</h2>
+                    <h2>Get Solutions For All <span>Your Home Services Needs</span></h2>
                 </div>
                 <Button>Contact Us</Button>
             </div>
-
-            <Row>
-                <Col xs='7' className={styles.footer_logo}>
+            <Row className={styles.footer_content}>
+                <Col xs='12' className={styles.footer_logo}>
                     <Image className={styles.image} src={logo} alt='logotipo' />
                     <p>“Transforming Spaces, Transforming Lives”</p>
                 </Col>
-            </Row>
-            <Row xs={1} className={styles.footer_content}>
-
-                <Col xs='6' className={styles.footer_info}>
+                <Col className={styles.footer_info}>
                     <h3>Navigation</h3>
                     <p>home</p>
                     <p>About Us</p>
@@ -33,7 +29,7 @@ export default function Footer() {
                     <p>Projects</p>
                 </Col>
 
-                <Col xs='6' className={styles.footer_info}>
+                <Col className={styles.footer_info}>
                     <h3>Social</h3>
                     <p>facebook</p>
                     <p>instagram</p>

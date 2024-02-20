@@ -20,6 +20,8 @@
 
 .footer_content {
     margin-top: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .footer_info {
@@ -73,4 +75,24 @@
 
 .form_prev_modal div h2 {
     font-weight: 600;
+}
+
+.form_prev_modal div h2  span{
+    color: #0d6efd;
+}
+
+@media screen and (min-width: 992px) {
+
+    .form_prev_modal {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6rem;
+    }
+
+    .form_prev_modal div h2 {
+        width: 520px;
+    }
+
 }

@@ -19,13 +19,16 @@
     font-size: .9rem;
 }
 
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .text_content {
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
-    width: 80%;
 
     border: 2px solid #0d6efd;
     border-radius: 10px;
@@ -79,4 +82,18 @@
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .content_testimonials {
+        display: flex;
+        align-items: center;
+    }
+
+    .testimonials_text h2 {
+        padding: 0 4rem;
+    }
+
 }
