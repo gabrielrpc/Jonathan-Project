@@ -17,30 +17,6 @@
 }
 
 .card_content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    padding: 0;
+    padding: 2rem .75rem;
     margin-top: 2rem;
-    overflow: hidden;
-
-    transition: height 0.5s ease;
-}
-
-.row_display {
-    display: none;
-}
-
-.row_display_show {
-    display: block;
-}
-
-.more {
-    margin-top: 2rem;
-}
-
-.btn_more {
-    width: 148px;
-    margin: 0 auto;
 }

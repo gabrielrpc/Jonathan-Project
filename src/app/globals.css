@@ -1,4 +1,4 @@
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,5 +9,9 @@
 }
 
 .body_content {
-    background: #e7effa;
+    background: #f1f1f1;
+}
+
+button {
+    padding: .7rem 1rem !important;
 }

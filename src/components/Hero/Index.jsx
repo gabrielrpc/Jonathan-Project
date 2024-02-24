@@ -2,7 +2,7 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import styles from './hero.module.css'
 import Image from 'next/image'
-import trabalhadores from '../../../public/trabalhadores_hero.jpg'
+import hero_image from '../../../public/hero_image.jpg'
 import useWindowSize from '@/hooks/useWindowSize'
 
 export default function Hero() {
@@ -10,9 +10,9 @@ export default function Hero() {
     const { width } = useWindowSize()
 
     return (
-        <Container fluid={width <= 991}>
+        <Container >
             <Row className={styles.content_hero}>
-                <Col xs={{ order: 2, span: 12 }} lg={{ order: 1, span: 6 }} className={styles.hero_text}>
+                <Col xs={{ order: 2, span: 12 }} md={{ order: 1, span: 6 }} className={styles.hero_text}>
                     <h1>Transform Your Space with <span>Expert Services</span></h1>
                     <p className={styles.hero_text_p}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic reprehenderit dolorum esse quod unde deleniti quisquam eos beatae molestiae magnam ipsa tempora voluptatibus a qui nisi, in officia dignissimos perspiciatis?</p>
                     <Button>Get a Quote</Button>
@@ -28,8 +28,8 @@ export default function Hero() {
                         </div>
                     </div>
                 </Col>
-                <Col lg={{ order: 2}} className={styles.image_content}>
-                    <Image className={styles.image} src={trabalhadores} alt='trabalhadores' />
+                <Col md={{ order: 2}} className={styles.image_content}>
+                    <Image className={styles.image} src={hero_image} alt='hero_image' />
                 </Col>
             </Row>
         </Container>
