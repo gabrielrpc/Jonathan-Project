@@ -15,3 +15,12 @@
 button {
     padding: .7rem 1rem !important;
 }
+
+.carousel-indicators {
+    display: none!important;
+}
+
+.bg-degrade {
+    background: rgb(54, 75, 109);
+    background: linear-gradient(231deg, rgba(54, 75, 109, 1) 46%, rgba(7, 16, 19, 1) 99%);
+}
