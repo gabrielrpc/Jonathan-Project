@@ -10,7 +10,7 @@ export default function Hero() {
     const { width } = useWindowSize()
 
     return (
-        <Container className={styles.content}>
+        <Container className={styles.content} fluid>
             <Row className={styles.content_hero}>
                 <Col xs={{ order: 2, span: 12 }} md={{ order: 1, span: 6 }} className={styles.hero_text}>
                     <h1>Transform Your Space with <span>Expert Services</span></h1>
