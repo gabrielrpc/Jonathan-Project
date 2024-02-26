@@ -17,10 +17,10 @@ button {
 }
 
 .carousel-indicators {
-    display: none!important;
+    display: none !important;
 }
 
 .bg-degrade {
-    background: rgb(54, 75, 109);
-    background: linear-gradient(231deg, rgba(54, 75, 109, 1) 46%, rgba(7, 16, 19, 1) 99%);
+    background: rgb(11, 94, 215);
+    background: linear-gradient(231deg, rgba(11, 94, 215, 1) 6%, rgba(46, 64, 87, 1) 59%);
 }
