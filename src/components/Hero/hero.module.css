@@ -5,23 +5,29 @@
     margin: 0 auto;
     margin-top: -75px;
     max-width: 1320px;
+    padding: 0 1rem 0 1rem;
 }
 
 @media screen and (max-width: 1400px) {
     .content_hero {
-        max-width: 1140px
+        max-width: 1140px;
     }
 }
 
 @media screen and (max-width: 1199px) {
     .content_hero {
-        max-width: 960px
+        max-width: 960px;
     }
 }
 
 @media screen and (max-width: 991px) {
     .content_hero {
-        max-width: 720px
+        max-width: 720px;
+        padding: 0;
+    }
+
+    .hero_text {
+        margin-right: 1rem;
     }
 }
 
@@ -32,6 +38,10 @@
 
     .hero_text_p {
         padding: 0 1rem;
+    }
+
+    .hero_text {
+        margin-right: 0;
     }
 }
 
