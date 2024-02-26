@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <Row className={styles.footer_content}>
-                <Col xs='12' className={styles.footer_logo}>
+                <Col className={styles.footer_logo}>
                     <Image className={styles.image} src={logo} alt='logotipo' />
                     <p>“Transforming Spaces, Transforming Lives”</p>
                 </Col>
@@ -28,13 +28,6 @@ export default function Footer() {
                     <p>instagram</p>
                     <p>tiktok</p>
                     <p>X</p>
-                </Col>
-
-                <Col className={styles.footer_info}>
-                    <h3>Contact</h3>
-                    <p>number</p>
-                    <p>email</p>
-                    <p>adress</p>
                 </Col>
             </Row>
             <Row className={styles.copy}>

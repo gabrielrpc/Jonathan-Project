@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import FormQuote from "@/components/FormQuote";
 
 export default async function Home() {
   return (
@@ -16,8 +17,8 @@ export default async function Home() {
       <Services />
       <Projects />
       <Testimonials />
+      <FormQuote />
       <Footer />
     </>
-    //footer
   );
 }
