@@ -9,13 +9,6 @@ export default function Footer() {
 
     return (
         <footer className={styles.footer}>
-            <div className={styles.form_prev_modal}>
-                <div>
-                    <p>need any help</p>
-                    <h2>Get Solutions For All <span>Your Home Services Needs</span></h2>
-                </div>
-                <Button>Contact Us</Button>
-            </div>
             <Row className={styles.footer_content}>
                 <Col xs='12' className={styles.footer_logo}>
                     <Image className={styles.image} src={logo} alt='logotipo' />
