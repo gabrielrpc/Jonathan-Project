@@ -1,13 +1,9 @@
-'use client'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import styles from './hero.module.css'
 import Image from 'next/image'
 import hero_image from '../../../public/hero_image.jpg'
-import useWindowSize from '@/hooks/useWindowSize'
 
 export default function Hero() {
-
-    const { width } = useWindowSize()
 
     return (
         <Container className={styles.content} fluid>

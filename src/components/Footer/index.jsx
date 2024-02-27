@@ -1,9 +1,7 @@
-
 import styles from './footer.module.css'
-import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../../../public/logo_provisoria.jpg'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 export default function Footer() {
 

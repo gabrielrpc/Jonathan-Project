@@ -1,7 +1,5 @@
-"use client"
-import { Button, Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import styles from './cards.module.css'
-import trabalhadores from '../../../public/trabalhadores_hero.jpg'
 import Image from 'next/image'
 
 export default function Cards({ images, text, title }) {
