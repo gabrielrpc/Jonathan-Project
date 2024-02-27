@@ -17,11 +17,11 @@ export default function FormQuote() {
 
                     <div>
                         <p>
-                            <i class="bi bi-telephone-fill" />
+                            <i className="bi bi-telephone-fill" />
                             <a className={styles.contact_link} href="#"> +999 123 456 789</a>
                         </p>
                         <p>
-                            <i class="bi bi-envelope-at-fill" />
+                            <i className="bi bi-envelope-at-fill" />
                             <a className={styles.contact_link} href="#"> Email@email.com</a></p>
                     </div>
                 </Col>
