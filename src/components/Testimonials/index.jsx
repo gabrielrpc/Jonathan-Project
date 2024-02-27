@@ -4,7 +4,7 @@ import styles from './projects.module.css'
 import Image from 'next/image'
 import { useState } from 'react'
 import liam from '../../../public/liam.png'
-import emma from '../../../public/emma.png'
+import emma_cliente from '../../../public/emma_cliente.png'
 import manson from '../../../public/manson.png'
 
 
@@ -31,7 +31,7 @@ export default function Testimonials() {
                                 &quot; I couldn&rsquo;t be happier with the new flooring on my balcony! The team did an amazing job, and the results exceeded my expectations. Now I can enjoy my morning coffee outside in style. Thank you for the excellent service!&quot;
                             </p>
                             <div className={styles.person}>
-                                <Image src={emma} className={styles.image} alt='Delighted Customer' />
+                                <Image src={emma_cliente} className={styles.image} alt='Delighted Customer' />
                                 <div>
                                     <span>Emma Smith</span>
                                     <p>Delighted Customer</p>
