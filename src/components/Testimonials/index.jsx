@@ -4,7 +4,7 @@ import styles from './projects.module.css'
 import Image from 'next/image'
 import { useState } from 'react'
 import liam from '../../../public/liam.png'
-import emma_cliente from '../../../public/emma_cliente.png'
+/* import emma_cliente from '../../../public/emma_cliente.png' */
 import manson from '../../../public/manson.png'
 
 
@@ -26,7 +26,7 @@ export default function Testimonials() {
 
                 <Col xs={10} lg={5} className={styles.text_content}>
                     <Carousel activeIndex={index} onSelect={handleSelect} className='carousel-testimonials'>
-                        <Carousel.Item>
+                        {/* <Carousel.Item>
                             <p>
                                 &quot; I couldn&rsquo;t be happier with the new flooring on my balcony! The team did an amazing job, and the results exceeded my expectations. Now I can enjoy my morning coffee outside in style. Thank you for the excellent service!&quot;
                             </p>
@@ -37,7 +37,7 @@ export default function Testimonials() {
                                     <p>Delighted Customer</p>
                                 </div>
                             </div>
-                        </Carousel.Item>
+                        </Carousel.Item> */}
                         <Carousel.Item>
                             <p>
                                 &quot;I couldn&rsquo;t be happier with the outcome of my bathroom flooring renovation! The tiles look fantastic, and the installation process was seamless. It&rsquo;s like having a brand new bathroom. Highly recommend their services!&quot;
