@@ -35,12 +35,40 @@
 .content_contact {
     background-color: #0d6efd;
     border-radius: 15px;
-    padding: 1rem;
+    padding: 4rem 2rem;
     height: 420px;
+    color: #FFFFFF;
+}
+
+.content_contact h3 {
+    font-size: 1.525rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.content_contact p {
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-bottom: 2rem;
+}
+
+.content_contact div p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content_contact div p i {
+    font-size: 1.5rem;
 }
 
 .contact_link {
-    color: #242424;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 20px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .form {
@@ -67,7 +95,7 @@
 
 .form_input::placeholder,
 .form_textarea::placeholder {
-    color: #9c9c9c; 
+    color: #9c9c9c;
     font-size: .8rem;
 }
 
@@ -80,4 +108,3 @@
     width: 100%;
     margin-top: 1rem;
 }
-

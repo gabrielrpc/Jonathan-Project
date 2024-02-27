@@ -1,6 +1,6 @@
 "use client"
-import styles from './header.module.css'
-import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap"
+import styles from './form.module.css'
+import { Button, Col, Container, Form, Row } from "react-bootstrap"
 
 export default function FormQuote() {
     return (
@@ -16,8 +16,13 @@ export default function FormQuote() {
                     <p>Fill up the form. Our team will get back to you as soon possible</p>
 
                     <div>
-                        <p>Phone:<a className={styles.contact_link} href="#"> +999 123 456 789</a></p>
-                        <p>Email:<a className={styles.contact_link} href="#"> Email@email.com</a></p>
+                        <p>
+                            <i class="bi bi-telephone-fill" />
+                            <a className={styles.contact_link} href="#"> +999 123 456 789</a>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-at-fill" />
+                            <a className={styles.contact_link} href="#"> Email@email.com</a></p>
                     </div>
                 </Col>
                 <Col className={styles.content_form}>

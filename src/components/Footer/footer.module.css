@@ -2,7 +2,7 @@
     background-color: #2E4057;
     margin-top: 8rem;
     color: #fff;
-    padding: 2rem;
+    padding: 4rem 2rem;
     padding-bottom: 0;
 
     position: relative;
@@ -26,17 +26,26 @@
 }
 
 .footer_info {
-    margin-top: 1rem;
+    text-align: center;
 }
 
-.footer_info h3 {
+.footer_info h5 {
     font-size: 1.125rem;
     margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: .5px;
 }
 
-.footer_info p {
+.footer_link {
     font-size: .9rem;
     margin-bottom: .5rem;
+    letter-spacing: .5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    color: #72ABFE;
 }
 
 .copy p {
