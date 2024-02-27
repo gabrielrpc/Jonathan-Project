@@ -24,3 +24,8 @@ button {
     background: rgb(11, 94, 215);
     background: linear-gradient(231deg, rgba(11, 94, 215, 1) 6%, rgba(46, 64, 87, 1) 59%);
 }
+
+.carousel-testimonials .carousel-control-next,
+.carousel-testimonials .carousel-control-prev {
+    display: none;
+}
