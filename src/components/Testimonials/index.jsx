@@ -1,7 +1,6 @@
 "use client"
-import { Button, Card, Carousel, Col, Container, Row } from 'react-bootstrap'
+import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import styles from './projects.module.css'
-import trabalhadores from '../../../public/trabalhadores_hero.jpg'
 import Image from 'next/image'
 import { useState } from 'react'
 import liam from '../../../public/liam.png'
