@@ -1,5 +1,6 @@
 .header {
     padding: 0 .75rem;
+    position: relative;
 }
 
 .navigation {
@@ -67,6 +68,28 @@
     margin-left: 2rem;
 }
 
+@media (max-width: 991px) {
+    .navigation {
+        position: relative;
+    }
+
+    .ul_content {
+        position: absolute;
+        top: 74px;
+        left: 0px;
+        padding: 2rem 0;
+
+        z-index: 1000;
+        background-color: #2E4057;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .btn_header {
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 767px) {
 
     .navigation {
@@ -81,9 +104,7 @@
         padding-bottom: 1rem;
     }
 
-    .btn_header {
-        margin-left: 0;
-    }
+    
 }
 
 @media (max-width: 380px) {
