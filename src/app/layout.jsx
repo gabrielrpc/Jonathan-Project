@@ -2,6 +2,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { Poppins } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   weight: "400",
@@ -16,7 +17,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} body_content`}>{children}</body>
+      <body className={`${poppins.className} body_content`}>
+        <div id='home' className={"contact"}>
+          <a className={"item_link"} href="#">+999 123 456 789</a>
+          <a className={"item_link"} href="#">Email@email.com</a>
+
+          <div className={"social_container"}>
+            <a className={"item_link"} href="#"><i className="bi bi-instagram" /></a>
+            <a className={"item_link"} href="#"><i className="bi bi-threads" /></a>
+            <a className={"item_link"} href="#"><i className="bi bi-tiktok" /></a>
+          </div>
+        </div>
+
+        <main className="main">
+          {children}
+        </main>
+
+        <Footer />
+      </body>
     </html>
   );
 }

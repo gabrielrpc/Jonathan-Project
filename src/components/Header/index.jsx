@@ -16,19 +16,7 @@ export default function Header() {
     }
 
     return (
-        <header>
-
-            <div id='home' className={styles.contact}>
-                <a className={styles.item_link} href="#">+999 123 456 789</a>
-                <a className={styles.item_link} href="#">Email@email.com</a>
-
-                <div className={styles.social_container}>
-                    <a className={styles.item_link} href="#"><i className="bi bi-instagram" /></a>
-                    <a className={styles.item_link} href="#"><i className="bi bi-threads" /></a>
-                    <a className={styles.item_link} href="#"><i className="bi bi-tiktok" /></a>
-                </div>
-            </div>
-
+        <header className={styles.header}>
             <div className={styles.container_navigation}>
                 <Navbar collapseOnSelect expand="lg" className={styles.navigation + ' container'} onToggle={handleOpenMenu}>
                     <Navbar.Brand href="/" className={styles.logo}>
