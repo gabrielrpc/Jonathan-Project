@@ -63,9 +63,14 @@
     margin-right: auto;
 }
 
-.image {
-    width: 85px;
+.logo_icon {
+    width: 55px;
     height: 55px;
+}
+
+.logo_nome {
+    height: 40px;
+    width: 150px;
     border-radius: 5px;
 }
 

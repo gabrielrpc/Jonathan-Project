@@ -1,6 +1,7 @@
 import styles from './footer.module.css'
 import Image from 'next/image'
-import logo from '../../../public/logo_provisoria.jpg'
+import logo_icon from '../../../public/logo_icon.png'
+import logo_nome from '../../../public/logo_nome.png'
 import { Col, Row } from 'react-bootstrap'
 
 export default function Footer() {
@@ -8,8 +9,11 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <Row className={styles.footer_content}>
-                <Col className={styles.footer_logo}>
-                    <Image className={styles.image} src={logo} alt='logotipo' />
+                <Col xs={12} md={4} className={styles.footer_logo}>
+                    <div className={styles.logo}>
+                        <Image className={styles.logo_icon} src={logo_icon} alt='logotipo' />
+                        <Image className={styles.logo_nome} src={logo_nome} alt='logotipo' />
+                    </div>
                     <p>“Transforming Spaces, Transforming Lives”</p>
                 </Col>
                 <Col className={styles.footer_info}>

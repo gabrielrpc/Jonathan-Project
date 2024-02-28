@@ -3,7 +3,8 @@ import styles from './header.module.css'
 import { Button, Nav, Navbar } from 'react-bootstrap'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../../../public/logo_provisoria.jpg'
+import logo_icon from '../../../public/logo_icon.png'
+import logo_nome from '../../../public/logo_nome.png'
 import { useState } from 'react'
 
 export default function Header() {
@@ -29,9 +30,10 @@ export default function Header() {
             </div>
 
             <div className={styles.container_navigation}>
-                <Navbar collapseOnSelect expand="md" className={styles.navigation + ' container'} onToggle={handleOpenMenu}>
+                <Navbar collapseOnSelect expand="lg" className={styles.navigation + ' container'} onToggle={handleOpenMenu}>
                     <Navbar.Brand href="/" className={styles.logo}>
-                        <Image className={styles.image} src={logo} alt='logotipo' />
+                        <Image className={styles.logo_icon} src={logo_icon} alt='logotipo icone' />
+                        <Image className={styles.logo_nome} src={logo_nome} alt='logotipo nome' />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" className={styles.toggleMenu}>
                         {isOpenMenu ? <i className="bi bi-x-lg" /> : <i className="bi bi-list" />}
