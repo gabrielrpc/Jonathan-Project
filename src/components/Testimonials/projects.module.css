@@ -31,7 +31,13 @@
     justify-content: center;
 }
 
+.content_testimonials {
+    max-width: 698px;
+}
+
 .text_content {
+    max-width: 620px;
+
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -45,9 +51,17 @@
     justify-content: center;
     gap: 4rem;
 
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
 
     background-color: #d4ebff;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .content_testimonials {
+        max-width: 1340px;
+    }
+    
 }
 
 .text_content>p {

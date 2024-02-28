@@ -15,12 +15,12 @@ export default function Testimonials() {
     return (
         <Container className={styles.testimonials}>
             <Row className={styles.content_testimonials}>
-                <Col lg={5} className={styles.testimonials_text}>
+                <Col xs={12} xl={6} className={styles.testimonials_text}>
                     <h2>Feedbacks From <span>Happy Clients</span></h2>
                     <p>we take immense pride in delivering exceptional services that truly transform our customers living spaces. but don&rsquo;t just take our word for it.</p>
                 </Col>
 
-                <Col xs={10} lg={5} className={styles.text_content}>
+                <Col xs={10} xl={6} className={styles.text_content}>
                     <Carousel activeIndex={index} onSelect={handleSelect} className='carousel-testimonials'>
                         <Carousel.Item>
                             <p>
