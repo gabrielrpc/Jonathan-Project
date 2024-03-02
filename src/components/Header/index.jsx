@@ -6,6 +6,7 @@ import Image from 'next/image'
 import logo_icon from '../../../public/logo_icon.png'
 import logo_nome from '../../../public/logo_nome.png'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 export default function Header() {
 
@@ -17,8 +18,14 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <div className={styles.container_navigation}>
-                <Navbar collapseOnSelect expand="lg" className={styles.navigation + ' container'} onToggle={handleOpenMenu}>
+            <motion.div
+                className={styles.container_navigation}
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -100 }}
+                transition={{ duration: 0.5 }}
+            >
+                <Navbar collapseOnSelect expand="lg" className={styles.navigation} onToggle={handleOpenMenu}>
                     <Navbar.Brand href="/" className={styles.logo}>
                         <Image className={styles.logo_icon} src={logo_icon} alt='logotipo icone' />
                         <Image className={styles.logo_nome} src={logo_nome} alt='logotipo nome' />
@@ -41,7 +48,7 @@ export default function Header() {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-            </div>
+            </motion.div>
 
         </header>
     )

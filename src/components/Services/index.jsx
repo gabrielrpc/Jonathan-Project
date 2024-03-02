@@ -16,7 +16,7 @@ export default function Services() {
     const numServicosExibidos = mostrarTodos ? data.length : width < 768 ? 2 : 4;
 
     return (
-        <Container id='services'>
+        <Container id='services' className='container_flex'>
             <Row className={styles.content_services}>
                 <Col className={styles.services_text}>
                     <h2>Our <span>Services</span></h2>
@@ -31,6 +31,7 @@ export default function Services() {
                         text={servico.text}
                         color={servico.color}
                         images={trabalhadores}
+                        index={index}
                     />
                 ))}
                 <Col xs={12} className='m-auto text-center'>

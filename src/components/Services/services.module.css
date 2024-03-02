@@ -1,5 +1,5 @@
 .content_services {
-    margin-top: 5rem;
+    margin-right: auto;
 }
 
 .services_text>h2 {
@@ -24,7 +24,7 @@
     margin-top: 2rem;
     position: relative;
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;

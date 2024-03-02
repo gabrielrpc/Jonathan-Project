@@ -1,6 +1,7 @@
 "use client"
 import styles from './form.module.css'
 import { Button, Col, Container, Form, Row } from "react-bootstrap"
+import { motion } from 'framer-motion'
 
 export default function FormQuote() {
     return (
@@ -11,19 +12,27 @@ export default function FormQuote() {
                 <p>Need more information or you want to make a quote <br /> Just write us a message!</p>
             </Row>
             <Row className={styles.contact}>
-                <Col xs={12} md={5} className={styles.content_contact}>
-                    <h3>Contact Information</h3>
-                    <p>Fill up the form. Our team will get back to you as soon possible</p>
+                <Col xs={12} md={5} >
+                    <motion.div
+                        initial={{ opacity: 0, x: -100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -100 }}
+                        transition={{ duration: 0.5 }}
+                        className={styles.content_contact}
+                    >
+                        <h3>Contact Information</h3>
+                        <p>Fill up the form. Our team will get back to you as soon possible</p>
 
-                    <div>
-                        <p>
-                            <i className="bi bi-telephone-fill" />
-                            <a className={styles.contact_link} href="#"> +999 123 456 789</a>
-                        </p>
-                        <p>
-                            <i className="bi bi-envelope-at-fill" />
-                            <a className={styles.contact_link} href="#"> Email@email.com</a></p>
-                    </div>
+                        <div>
+                            <p>
+                                <i className="bi bi-telephone-fill" />
+                                <a className={styles.contact_link} href="#"> +999 123 456 789</a>
+                            </p>
+                            <p>
+                                <i className="bi bi-envelope-at-fill" />
+                                <a className={styles.contact_link} href="#"> Email@email.com</a></p>
+                        </div>
+                    </motion.div>
                 </Col>
                 <Col className={styles.content_form}>
                     <Form className={styles.form}>

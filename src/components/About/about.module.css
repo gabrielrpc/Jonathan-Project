@@ -1,6 +1,6 @@
 
 .content_about {
-    margin-top: 5rem;
+    margin-right: auto;
 }
 
 .about_text>h2 {
@@ -52,10 +52,8 @@
     cursor: default;
 }
 
-.mission_content div {
+.mission_content_div {
     padding: 1rem;
-
-
 
     display: flex;
     flex-direction: column;
@@ -64,17 +62,17 @@
     border: 1px solid #0d6efd;
 }
 
-.mission_content span {
+.mission_content_div span {
     color: #0d6efd;
 }
 
-.mission_content div h3 {
+.mission_content_div h3 {
     font-size: 1.325rem;
     font-weight: 700;
     letter-spacing: .5px;
 }
 
-.mission_content div p {
+.mission_content_div p {
     margin: 0;
     font-size: .9rem;
 }
