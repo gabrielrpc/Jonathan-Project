@@ -1,9 +1,6 @@
-.projects {
-    min-height: 100vh;
-}
-
 .content_projects {
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
 .projects_text {
