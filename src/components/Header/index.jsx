@@ -23,7 +23,7 @@ export default function Header() {
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -100 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.3 }}
             >
                 <Navbar collapseOnSelect expand="lg" className={styles.navigation} onToggle={handleOpenMenu}>
                     <Navbar.Brand href="/" className={styles.logo}>

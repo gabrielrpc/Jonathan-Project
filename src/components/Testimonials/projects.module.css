@@ -4,7 +4,6 @@
 }
 
 .content_testimonials {
-    max-width: 698px;
     padding: 0 12px;
 }
 
@@ -64,17 +63,6 @@
     background-color: #d4ebff;
 }
 
-@media screen and (min-width: 1200px) {
-
-    .content_testimonials {
-        max-width: 1340px;
-    }
-
-    .text_content  {
-        height: auto;
-    }
-    
-}
 
 .text_content>p {
     margin: 0;
@@ -106,15 +94,6 @@
     margin: 0;
     font-size: .8rem;
 }
-
-.next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1rem;
-}
-
 
 @media screen and (min-width: 992px) {
 
