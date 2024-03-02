@@ -1,5 +1,5 @@
 .content_services {
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .services_text>h2 {
@@ -21,6 +21,13 @@
 }
 
 .card_content {
-    padding: 2rem .75rem;
     margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+    min-height: 580px;
 }

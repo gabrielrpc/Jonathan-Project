@@ -1,18 +1,18 @@
-import { Card } from 'react-bootstrap'
 import styles from './cards.module.css'
 import Image from 'next/image'
 
-export default function Cards({ images, text, title }) {
+
+export default function Cards({ images, text, title, color }) {
 
     return (
-        <Card className={styles.card}>
-            <Card.Img as={Image} variant="top" src={images} className={styles.image} />
-            <Card.Body>
-                <Card.Title className={styles.title}>{title}</Card.Title>
-                <Card.Text className={styles.text}>
-                    {text}
-                </Card.Text>
-            </Card.Body>
-        </Card>
+        <article className={`${styles.card} ${color && styles.color_card}` }>
+            <div className={styles.img_box}>
+                <Image className={styles.image} src={images} alt="image-card" />
+            </div>
+            <div className={styles.text_content}>
+                <h2 className={`${styles.title} ${color && styles.title_color}`}>{title}</h2>
+                <p>{text}</p>
+            </div>
+        </article>
     )
 }
