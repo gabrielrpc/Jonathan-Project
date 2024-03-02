@@ -17,7 +17,7 @@ export default function Header() {
     }
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header + ' container px-xxl-2'}>
             <motion.div
                 className={styles.container_navigation}
                 initial={{ opacity: 0, y: -100 }}
